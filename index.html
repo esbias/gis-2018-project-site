@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fragility in the World Map #1</title>
+    <!-- Load Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  
+  <body>
+      
+    <div id="map-container">
+
+ <div id="map"></div>
+
+ <!-- Load Leaflet and Carto libraries -->
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+    <script src="https://cartodb-libs.global.ssl.fastly.net/carto.js/v4.0.0-beta/carto.min.js"></script>
+
+   
+  </div><!-- end map-container -->
+
+    
+  <div id="info-sidebar">
+    
+  <h3>
+    Fragility in the World - Map #1
+  </h3>
+  <h4>
+    Freedom of the Press 2017
+  </h4>
+  
+  <p>
+    This map is a measure of press freedom in the world, according to data from <a href="http://https://freedomhouse.org/report/freedom-press/freedom-press-2017">Freedom House</a>.
+    <br><br>
+    Use the dropdown to isolate countries by their status, either <span style="color: #60bc52;">FREE</span>, <span style="color: #efd551;">PARTIALLY FREE</span> or <span style="color: #c42525;">NOT FREE</span>.
+  </p>
+  
+  <select class="layer-picker">
+        <option value="all">All Countries</option>
+        <option value="F">Free</option>
+        <option value="PF">Partially Free</option>
+        <option value="NF">Not Free</option>
+        <option value="null">N/A</option>
+  </select>
+  
+  <!-- Load our JavaScript -->
+  <script src="./script.js"></script>
+  
+</div><!-- end info-sidebar div -->
+      
+  </body>
+</html>
